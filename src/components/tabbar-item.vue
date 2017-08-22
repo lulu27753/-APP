@@ -26,9 +26,9 @@
 			display: block;
 			padding-top: 2px;
 			img{
-		              width: 28px;
-		              height: 28px;
-		          }
+		        width: 28px;
+		        height: 28px;
+		        }
 		}
 		.m-tabbar-item-text{
 	          display: block;
@@ -39,5 +39,6 @@
 		      .m-tabbar-item-text{
 		       		color: #42bd56;
 		      }
+		 }
 	}
 </style>

@@ -1,7 +1,6 @@
 <!-- 实现tab的外层容器 -->
 <template>
-	<div class="m-tabbar"></div>
-	<slot></slot>
+	<div class="m-tabbar"><slot></slot></div>
 </template>
 
 <script>
@@ -25,7 +24,7 @@
 		overflow: hidden;
 		background: #fff;
 		border-top: 1px solid #e4e4e4;
-		
+
 
 	}
 </style>
