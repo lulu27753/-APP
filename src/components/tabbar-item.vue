@@ -1,8 +1,11 @@
 <!-- 子组件的item项 -->
 <template>
-	<a class="m-tabbar-item">
-		<span class="m-tabbar-item-icon">
+	<a class="m-tabbar-item" :class="{'is-active':isActive}" @click="$parent.$emit('input',id)">
+		<span class="m-tabbar-item-icon" v-show="!isActive">
 			<slot name="icon-normal"></slot>
+		</span>
+		<span class="m-tabbar-item-icon" v-show="isActive">
+			<slot name="icon-active"></slot>
 		</span>
 		<span class="m-tabbar-item-text">
 			<slot></slot>
@@ -11,6 +14,16 @@
 </template>
 
 <script>
+	export default{
+		props:['id'],
+		computed:{
+			isActive(){
+				if(this.$parent.value === this.id){
+					return true;
+				}
+			}
+		}
+	}
 	
 </script>
 

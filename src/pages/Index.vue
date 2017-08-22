@@ -1,10 +1,10 @@
 <template>
-  <m-tabbar>
-    <m-tabbar-item id="tab1"><img src="../assets/images/ic_tab_home_normal.png" alt="" slot="icon-normal"> 首页</m-tabbar-item>
-    <m-tabbar-item id="tab2"><img src="../assets/images/ic_tab_subject_normal.png" height="96" width="96" alt="" slot="icon-normal">书影音</m-tabbar-item>
-    <m-tabbar-item id="tab3"><img src="../assets/images/ic_tab_status_normal.png" alt="" slot="icon-normal">广播</m-tabbar-item>
-    <m-tabbar-item id="tab4"><img src="../assets/images/ic_tab_group_normal.png" height="96" width="96" alt="" slot="icon-normal">小组</m-tabbar-item>
-    <m-tabbar-item id="tab5"><img src="../assets/images/ic_tab_profile_normal.png" alt="" slot="icon-normal">我的</m-tabbar-item>
+  <m-tabbar v-model="select">
+    <m-tabbar-item id="tab1"><img src="../assets/images/ic_tab_home_normal.png" alt="" slot="icon-normal"><img src="../assets/images/ic_tab_home_active.png" alt="" slot="icon-active"> 首页</m-tabbar-item>
+    <m-tabbar-item id="tab2"><img src="../assets/images/ic_tab_subject_normal.png" alt="" slot="icon-normal"><img src="../assets/images/ic_tab_subject_active.png" alt="" slot="icon-active">书影音</m-tabbar-item>
+    <m-tabbar-item id="tab3"><img src="../assets/images/ic_tab_status_normal.png" alt="" slot="icon-normal"><img src="../assets/images/ic_tab_status_active.png" alt="" slot="icon-active">广播</m-tabbar-item>
+    <m-tabbar-item id="tab4"><img src="../assets/images/ic_tab_group_normal.png" alt="" slot="icon-normal"><img src="../assets/images/ic_tab_group_active.png" alt="" slot="icon-active">小组</m-tabbar-item>
+    <m-tabbar-item id="tab5"><img src="../assets/images/ic_tab_profile_normal.png" alt="" slot="icon-normal"><img src="../assets/images/ic_tab_profile_active.png" alt="" slot="icon-active">我的</m-tabbar-item>
   </m-tabbar>
 </template>
 
@@ -16,7 +16,12 @@ export default{
   components:{
     mTabbar,
     mTabbarItem
-  }
+  },
+  data() {
+      return {
+        select:"tab1"
+      }
+    }
 }
 </script>
 

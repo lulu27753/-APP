@@ -4,7 +4,10 @@
 </template>
 
 <script>
-	
+	import mTabbarItem from './tabbar-item'
+	export default{
+		props:['value']
+	}
 </script>
 
 <style lang="less">
