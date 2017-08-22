@@ -1,3 +1,21 @@
-# DouBan-APP</br>
-http://www.lulustyle.net/DouBan-APP/. </br>
-用前端框架vuejs来实现豆瓣app，直接通过前端ajax来获取豆瓣API提供的电影和图书数据，从而实现应用组装
+# douban
+
+> douban
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
