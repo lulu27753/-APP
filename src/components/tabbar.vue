@@ -6,11 +6,14 @@
 <script>
 	import mTabbarItem from './tabbar-item'
 	export default{
-		props:['value']
+		// props:['value'],
+		// 通过计算返回当前路由的值
+		computed:{value(){return this.$route.matched[0].name}}
 	}
 </script>
 
 <style lang="less">
+
 	.m-tabbar{
 		display: -webkit-flex;
 		display: -moz-flex;
